@@ -11,4 +11,12 @@ router.get('/', (req, res) => {
     productsController.get(req, res)
 })
 
+router.get('/', (req, res) => { // busca por id
+    productsController.getById(req, res)
+})
+
+router.post('/', (req, res) => { // criar
+    productsController.create(req, res)
+})
+
 export default router
